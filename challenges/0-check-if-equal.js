@@ -14,30 +14,25 @@
 
 // pseudo code:
 // ============
-
-function isEqual(a,b){
 // if a is equal to b
-if(a===b){
-    // 	return Tru
-return 'True'
-}
+// 	return True
 // else
-else{
 // 	return False
-return 'False'
-}
 
+function isEqual (a,b) {
+    if(a === b){
+        return true;
+    }
+    else{
+        return false;
+    }
 }
-
 
 // test cases:
 // ===========
-console.log(isEqual(4, 4), "should be True")
-// isEqual(0, 0) should be True
-console.log(isEqual(0, 0), "should be True")
-// isEqual(-4, -4) should be True
-console.log(isEqual(-4, -4), "should be True")
-// isEqual(4, -4) should be False
-console.log(isEqual(4, -4), "should be True")
-// isEqual(0, 1) should be False
-console.log(isEqual(0, 1), "should be True")
+console.log( "isEqual(4, 4)",isEqual(4,4), "should be True")
+console.log ("isEqual(0,0)", isEqual(0, 0), "should be True")
+console.log ("isEqual(-4,-4)", isEqual(-4, -4), "should be True")
+console.log ("isEqual(4,-4)", isEqual(4, -4), "should be False")
+console.log ("isEqual(0,1)", isEqual(0, 1), "should be False")
+
